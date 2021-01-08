@@ -1,0 +1,38 @@
+<html>
+  <head>
+    <title>Contact us</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" text="text/css" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <video class="video" poster="" autoplay muted loop>
+      <source src="people.mp4" type="video/mp4">
+    </video>
+    <div class="center">
+      <h1 id="header"><b>Contact Us</b></h1>
+    </div>
+    <br>
+    <div id="section">
+      <i>For any enquiries please email us using this form below</i>
+    </div>
+    <br>
+    <div class="content-body">
+      <form action="send.php" method="post" name="form">
+          <label for="name"><b>Name:</label></b><br>
+          <input name="name" type="text" placeholder="Enter your full Name" required><br><br>
+          <label for="email"><b>Email:</b></label><br>
+          <input name="email" type="text" placeholder="Enter your email id" required><br><br>
+          <label for="subject"><b>Subject:</label></b></label><br>
+          <input name="text" type="text" placeholder="Subject"><br><br>
+          <label for="message"><b>Message:</b></label><br>
+          <textarea name="message" style="height:60" placeholder="Type your message" required></textarea><br><br>
+        <input name="submit" class="btn btn-success" type="submit" value="Submit">
+      </form>
+    </div>
+  </body>
+</html>

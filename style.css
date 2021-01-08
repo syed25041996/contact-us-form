@@ -1,0 +1,77 @@
+body{
+    margin: 0;
+    left: 0;
+    text-align:center;
+    transition: all 2s ease-in-out;
+}
+
+#header{
+    font-size: 40;
+    color:rgb(29, 161, 84);
+    background:black;
+    font-weight:300;
+    transition: all 2s ease-in-out;
+    font-family: Oswald;
+    text-align: center;
+    width: auto;
+    height: auto;
+}
+
+#section{
+    text-align: center;
+    font-size:30;
+    color:royalblue;
+    font-weight:bolder;
+    transition: all 2s ease-in-out;
+    border-radius:100% ;
+    border: 1px solid palevioletred;
+    background: white;
+}
+
+.video{
+    position: fixed;
+    margin: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.content-body{
+    padding: 10px;
+    background-color: rgba(11, 214, 45, 0.37);
+    margin: 50px 280px;
+    border: 1px solid black;
+    transition: all 2s ease-in-out;
+    width: auto;
+    height: auto;
+    
+}
+
+@media (min-aspect-ratio: 16/9){
+    .video{
+        width:100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio: 16/9){
+    .video{
+        width:auto;
+        height: 100%;
+    }
+}
+
+/* Since mobile devices consume more bandwidth ,instead of a video in background we have a picture */
+@media (max-width: 767px){
+    .video{
+        display: none;
+    }
+    body{
+        background: url(pexels-fwstudio-131634.jpg); 
+        background-size: cover;
+        display: grid;
+        }
+    .content-body{
+        background-color: lightpink;
+    }
+}
+
